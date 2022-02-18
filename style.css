@@ -1,0 +1,302 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box; outline: none;
+  border: none; text-decoration: none;
+  transition: all 0.7s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  
+}
+
+body{
+  background-color: #fcfcfc;
+}
+
+:root{
+  --malva: #d17a7b;
+  --rosa: #eccfda;
+  --beige: #c6b7a4;
+  --cafe: #745b56;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --box-shadow2: 0 .5rem 1rem rgba(236,207,218, 0.6);
+  --box-shadow3: 0 .5rem 1rem rgba(116, 91, 86, .2);
+}
+
+
+/* nav-bar start */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  padding: 1.5rem 10%;
+  background: var(--cafe);
+  box-shadow: var(--box-shadow);
+  
+  
+}
+
+span{
+  color: var(--malva);
+  font-weight: bold;
+}
+
+#navbar a{
+  display: inline-block;
+  color: #fff;
+  margin: 15px;
+}
+
+#navbar .logo{
+  font-weight: bold;
+}
+
+
+.logo{
+  color: #fff;
+}
+
+#navbar a:hover{
+  background-color: var(--rosa);
+  padding: .5rem;
+  color: var(--malva);
+  border-radius: 30px;
+  font-weight: bold ;
+}
+
+
+@media (max-width: 760px){
+  #navbar{
+   padding: 1rem 5%;
+    
+  }
+}
+/* nav-bar end */
+
+/* welcome section start */
+
+
+
+#welcome-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+} 
+
+.welcome-img img{
+  margin: 50px auto;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid var(--malva);
+}
+
+.welcome-text h1{
+  font-size: 2.5rem;
+  margin: 15px;
+  color: var(--cafe);
+  text-align: center;
+}
+.welcome-text span{
+  color: var(--malva);
+}
+
+.welcome-text p{
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+
+@media (max-width: 760px){
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}
+/* welcome section end */
+
+
+/* sobre mi start */
+
+#sobre-mi{
+  display: flex;
+  padding: 2rem 10%;
+  background: linear-gradient(90deg, var(--rosa) 10%, var(--malva) 100%);
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+#sobremi-img{
+  height: 300px;
+  border: 5px solid var(--malva);
+  margin: 0 3rem;
+}
+
+
+.sobre-mi-texto button{
+  background: var(--cafe);
+  color: #fff;
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 10px 15px;
+}
+
+.sobre-mi-texto button:hover{
+  letter-spacing: 7px;
+  background-color: var(--malva);
+  color: var(--rosa);
+  transition: 1s ease;
+}
+
+@media (max-width: 760px){
+
+#sobre-mi{
+  padding: 1rem 5%;
+}
+.sobre-mi-texto p{
+  font-size: .8rem;
+}
+
+.sobre-mi-texto button{
+  margin-top: 2rem ;
+}
+
+.sobre-mi-texto button:hover{
+  letter-spacing: 4px;
+}
+
+#sobremi-img{
+  margin: 0 1rem;
+}
+}
+
+
+
+/* sobre mi end */
+
+
+/* section trabajos start */
+.project-tile img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-tile{
+  box-shadow: var(--box-shadow3);
+  border-radius: 1rem;
+  margin: 2rem;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+}
+
+#projects{
+  padding: 3rem 10%;
+  align-items: center;
+  text-align: center;
+}
+
+#projects .cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+
+.project-tile img:hover{
+  transform: scale(1.2);
+}
+
+#projects h3{
+  text-align: center;
+  font-size: 5rem;
+  color: var(--malva);
+  letter-spacing: 7px;
+  text-shadow: 1px 3px var(--cafe);
+  
+}
+
+@media (max-width: 760px){
+  #projects h3{
+    font-size: 4rem;
+  }
+
+  .project-tile{
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+  }
+}
+
+/* section trabajos end */
+
+
+
+
+
+/* contactame start */
+
+#contactame{
+  padding: 3rem 10%;
+  align-items: center;
+  text-align: center;
+}
+
+#contactame h3{
+  text-align: center;
+  font-size: 5rem;
+  color: var(--malva);
+  letter-spacing: 7px;
+  text-shadow: 1px 3px var(--cafe);
+}
+
+#contactame form{
+  padding: 3rem 10%;
+  box-shadow: var(--malva);
+}
+
+
+#contactame input, textarea{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  background-color: var(--rosa);
+  border-bottom: 3px solid #d17a7b;
+
+}
+
+#contactame textarea{
+  transform: none;
+}
+
+
+#contactame .enviar{
+  border-bottom: none;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--cafe);
+}
+
+#contactame .enviar:hover{
+
+  background-color: #d17a7b;
+  letter-spacing: 15px;
+  transition: 1s ease;
+}
+
+/* contactame end */
